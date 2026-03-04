@@ -189,6 +189,13 @@ header .container .lang #langBtn:hover {
   font-family: var(--Alexandria);
 }
 
+.body .container .form .sigIn .signLink {
+    font-size: 13px;
+    font-family: var(--Alexandria);
+    font-weight: 700;
+    color: var(--third-color);
+}
+
 @media (min-width:250px) and (max-width: 500px) {
   /* header */
   header {
