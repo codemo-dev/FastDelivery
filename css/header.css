@@ -1,0 +1,147 @@
+/* start header */
+header {
+  font-family: var(--Alexandria);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--bg-color);
+}
+
+header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  height: 70px;
+  z-index: 10;
+}
+
+header .container .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .container .logo i {
+  font-size: 20px;
+}
+
+header .container .logo h1 {
+  font-size: 25px;
+  font-family: var(--Playpen);
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.lang i:hover {
+  color: var(--main-color);
+}
+
+.lang #langBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-align: center;
+  font-family: var(--Alexandria);
+}
+
+.lang #langBtn:focus {
+  outline: none;
+}
+
+.lang #langBtn:hover {
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+
+/* start navigation bar */
+header nav .nav-container {
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-container .nav-links {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 15px;
+  left: 0;
+  top: 70px;
+  transform: translateY(-18px);
+  opacity: 0;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+  z-index: 5;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav .nav-container .active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+header nav .nav-container .nav-links li a {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  font-family: var(--Alexandria);
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+header nav .nav-container .nav-links li:hover a {
+  color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .header .container .logo h1 {
+    font-size: 10px;
+    font-weight: 300;
+  }
+  header .container .logo i {
+    font-size: 17px;
+  }
+  .lang #langBtn {
+    font-size: 17px;
+    padding: 7px 15px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: white;
+  }
+  header nav .nav-container .nav-links li a {
+    font-size: 13px;
+  }
+  header nav .nav-container .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  header nav .nav-container .nav-links li {
+    transition:
+      padding 0.3s ease,
+      border-bottom 0.3s ease;
+  }
+  header nav .nav-container .nav-links li:hover {
+    padding: 10px;
+    border-bottom: 1px solid var(--main-color);
+  }
+}
+

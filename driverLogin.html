@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Lalezar&family=Playpen+Sans+Arabic:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- font icon file -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- normalize file -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/Dlogin.css" />
+    <link rel="stylesheet" href="css/globalRulse.css" />
+    <title>Fast Delivery | LogIn As Driver</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="back-home">
+          <i class="fas fa-home back"></i>
+          <span class="text">الرجوع للصفحة الرئيسية</span>
+        </a>
+
+        <div class="lang">
+          <button id="langBtn" class="english">English</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="body">
+      <div class="container">
+        <div class="icon">
+          <i class="fa-solid fa-user-tie"></i>
+          <div class="text">
+            <h1 class="log">تسجيل الدخول</h1>
+            <span id="des" class="driver">سجل لقبول الطلبات القريبة منك بسهولة</span>
+          </div>
+        </div>
+
+        <div class="form">
+          <form action="">
+            <label class="number" for="number">رقم هاتفك</label>
+            <div class="phone-box">
+              <i class="fas fa-phone"></i>
+              <input
+                id="number"
+                type="tel"
+                pattern="[0-9]{9}"
+                placeholder="0997904504"
+              />
+            </div>
+            <label class="pass" for="pass">كلمة السر</label>
+            <div class="pass-box">
+              <i class="fas fa-lock"></i>
+              <input
+                id="pass"
+                type="password"
+                placeholder="********"
+              />
+            </div>
+          </form>
+
+          <a class="forgot" href=""> نسيت كلمة السر؟ </a>
+
+          <button class="submitBtn">تسجيل الدخول</button>
+
+          <div class="sigIn">ليس لديك حساب؟<a class="signLink" href="">انشئ حساب</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/loginOLS.js"></script>
+    <script src="js/loginScript.js"></script>
+  </body>
+</html>
